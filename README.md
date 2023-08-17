@@ -28,3 +28,11 @@ npm install -g @angular/cli@16.2.0
 ```shell
 ng serve
 ```
+9. add your git email
+```shell
+git config --global user.email "you@example.com"
+```
+10. add your git name
+```shell
+git config --global user.name "Your Name"
+```
