@@ -7,43 +7,29 @@ learning angular
 ## setup dev environment
 
 1. setup docker-desktop
-    [download docker-desktop](https://www.docker.com/)
-2. download learn-angular dev environemnt
-    [download dev environment](https://open.docker.com/dashboard/dev-envs?url=https://github.com/gnairooze/learn-angular)
-3. start vs-code from docker desktop dev environment
-4. show terminal session inside vs-code
-5. go to the directory of the app
+    [download docker-desktop](https://www.docker.com/) and make sure it is running.
+2. clone this repo
 
-    ```shell
-    cd learn-angular-101
+    ```bash
+    git clone https://github.com/gnairooze/learn-angular.git
     ```
 
-6. setup all dependant modules
+3. go to the code in repo folder
 
-    ```shell
-    npm install
+    ```bash
+    cd learn-angular\learn-angular-101
     ```
 
-7. setup the version of angular used in the app
+4. build docker image
 
-    ```shell
-    npm install -g @angular/cli@16.2.0
+    ```bash
+    docker build -t learnangular101 .
     ```
 
-8. start the app server
+5. run docker container
 
-    ```shell
-    ng serve
+    ```bash
+    docker-compose up
     ```
 
-9. add your git email
-
-    ```shell
-    git config --global user.email "you@example.com"
-    ```
-
-10. add your git name
-
-    ```shell
-    git config --global user.name "Your Name"
-    ```
+6. open browser and go to [http://localhost:4200](http://localhost:4200)
