@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  learnangular101:
+    image: learnangular101
+    build:
+      context: learn-angular-101
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4200:80

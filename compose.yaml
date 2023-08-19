@@ -1,9 +1,0 @@
-services:
-  web:
-    image: gnairooze/learn-angular
-    ports:
-      - "4200:4200"
-    volumes:
-      - type: bind
-        source: ./learn0angular-101
-        target: /home/learn-angular
